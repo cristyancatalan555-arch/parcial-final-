@@ -1,0 +1,22 @@
+# Frontend
+node_modules/
+dist/
+
+# Backend
+target/
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# Logs / OS
+*.log
+.DS_Store
+Thumbs.db
+
+# Archivos locales
+*.tsbuildinfo
+.env
+.env.*
+!.env.example

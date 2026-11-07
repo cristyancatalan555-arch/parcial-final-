@@ -1,0 +1,50 @@
+{
+  "info": {
+    "name": "Ferretería FinalB - Versión 2",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:8080"
+    }
+  ],
+  "item": [
+    {
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/articulos/mostrarActivosFiltro?nombre=MARTILLO"
+      },
+      "name": "1 - Artículos activos por nombre"
+    },
+    {
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/articulos/reporteArticuloCategoria"
+      },
+      "name": "2 - Artículos con su categoría"
+    },
+    {
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/clientes/reporteClienteFactura"
+      },
+      "name": "3 - Facturas por cliente"
+    },
+    {
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/clientes/reporteClienteFacturaDetalle"
+      },
+      "name": "4 - Detalle de facturas"
+    },
+    {
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/categorias/reporteVentasCategoria"
+      },
+      "name": "Serie II - Ventas por categoría"
+    }
+  ]
+}
+

@@ -1,0 +1,2 @@
+import React from 'react';import ReactDOM from 'react-dom/client';import {BrowserRouter,Navigate,Route,Routes} from 'react-router-dom';import Reportes from './pages/Reportes';import './styles.css';
+ReactDOM.createRoot(document.getElementById('root')!).render(<React.StrictMode><BrowserRouter><Routes><Route path="/reportes" element={<Reportes/>}/><Route path="*" element={<Navigate to="/reportes" replace/>}/></Routes></BrowserRouter></React.StrictMode>);
